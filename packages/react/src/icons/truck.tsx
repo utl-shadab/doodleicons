@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const TruckIcon: IconComponent<"body" | "cab" | "wheels"> = /* @__PURE__ */ createIcon({"id":"truck","name":"Truck","category":"commerce","tags":["delivery","transport","shipping"],"shapes":[{"tag":"rect","attrs":{"x":2,"y":6,"width":17,"height":18,"rx":2},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M19 13h7l5 7v4H19z"},"part":"cab","paint":"accent"},{"tag":"circle","attrs":{"cx":8,"cy":26,"r":3},"part":"wheels","paint":"outline"},{"tag":"circle","attrs":{"cx":25,"cy":26,"r":3},"part":"wheels","paint":"outline"}],"parts":["body","cab","wheels"],"license":"MIT","artworkVersion":1});

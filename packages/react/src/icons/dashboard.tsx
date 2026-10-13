@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const DashboardIcon: IconComponent<"body"> = /* @__PURE__ */ createIcon({"id":"dashboard","name":"Dashboard","category":"interface","tags":["overview","panels","layout"],"shapes":[{"tag":"rect","attrs":{"x":4,"y":4,"width":10,"height":14,"rx":2},"part":"body","paint":"accent"},{"tag":"rect","attrs":{"x":18,"y":4,"width":10,"height":9,"rx":2},"part":"body","paint":"accent"},{"tag":"rect","attrs":{"x":4,"y":22,"width":10,"height":6,"rx":2},"part":"body","paint":"accent"},{"tag":"rect","attrs":{"x":18,"y":17,"width":10,"height":11,"rx":2},"part":"body","paint":"accent"}],"parts":["body"],"license":"MIT","artworkVersion":1});

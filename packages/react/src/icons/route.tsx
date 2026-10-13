@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const RouteIcon: IconComponent<"start" | "end" | "path"> = /* @__PURE__ */ createIcon({"id":"route","name":"Route","category":"travel","tags":["journey","path","directions"],"shapes":[{"tag":"circle","attrs":{"cx":6,"cy":6,"r":4},"part":"start","paint":"accent"},{"tag":"circle","attrs":{"cx":26,"cy":26,"r":4},"part":"end","paint":"accent"},{"tag":"path","attrs":{"d":"M10 6h13c11 0 8 11 0 11H9C-3 17 0 26 8 26h14"},"part":"path","paint":"outline"}],"parts":["start","end","path"],"license":"MIT","artworkVersion":1});

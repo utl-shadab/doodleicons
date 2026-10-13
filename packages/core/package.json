@@ -1,0 +1,66 @@
+{
+  "name": "doodle-icon",
+  "version": "0.1.0",
+  "description": "Typed SVG rendering and 15000 attributed icon drawings in 30 categories.",
+  "type": "module",
+  "license": "SEE LICENSE IN THIRD_PARTY_NOTICES.md",
+  "sideEffects": false,
+  "author": "shadab-choudhary",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utl-shadab/doodleicons.git",
+    "directory": "packages/core"
+  },
+  "homepage": "https://github.com/utl-shadab/doodleicons#readme",
+  "bugs": {
+    "url": "https://github.com/utl-shadab/doodleicons/issues"
+  },
+  "keywords": [
+    "icons",
+    "svg",
+    "doodleicons",
+    "figma",
+    "typescript"
+  ],
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md",
+    "data",
+    "THIRD_PARTY_NOTICES.md",
+    "licenses"
+  ],
+  "exports": {
+    "./library": {
+      "types": "./dist/library/render.d.ts",
+      "import": "./dist/library/render.js"
+    },
+    "./assets/*": {
+      "types": "./data/icon.d.ts",
+      "import": "./data/icons/*.js"
+    },
+    "./data/*": "./data/*",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./catalog": {
+      "types": "./dist/catalog.d.ts",
+      "import": "./dist/catalog.js"
+    },
+    "./collections": {
+      "types": "./dist/collections/index.d.ts",
+      "import": "./dist/collections/index.js"
+    },
+    "./collections/render": {
+      "types": "./dist/collections/render.d.ts",
+      "import": "./dist/collections/render.js"
+    }
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

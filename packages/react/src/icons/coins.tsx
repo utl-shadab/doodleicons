@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const CoinsIcon: IconComponent<"body" | "stack" | "back"> = /* @__PURE__ */ createIcon({"id":"coins","name":"Coins","category":"commerce","tags":["currency","savings","money"],"shapes":[{"tag":"ellipse","attrs":{"cx":12,"cy":10,"rx":10,"ry":4},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M2 10v13c0 6 20 6 20 0V10M2 16c0 6 20 6 20 0"},"part":"stack","paint":"outline"},{"tag":"path","attrs":{"d":"M23 5c11 0 11 10 0 10M29 10v11c0 3-3 5-6 5"},"part":"back","paint":"outline"}],"parts":["body","stack","back"],"license":"MIT","artworkVersion":1});

@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const FireIcon: IconComponent<"body" | "core"> = /* @__PURE__ */ createIcon({"id":"fire","name":"Fire","category":"expressive","tags":["hot","flame","trending"],"shapes":[{"tag":"path","attrs":{"d":"M18 1c5 13-6 10-2 18 4-1 7-4 7-8 18 16-4 29-16 16C-1 17 13 13 18 1Z"},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M14 22c-5 6 0 10 4 7 2-2 0-5-1-7"},"part":"core","paint":"outline"}],"parts":["body","core"],"license":"MIT","artworkVersion":1});

@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const DumbbellIcon: IconComponent<"weights" | "bar"> = /* @__PURE__ */ createIcon({"id":"dumbbell","name":"Dumbbell","category":"health","tags":["gym","strength","workout"],"shapes":[{"tag":"rect","attrs":{"x":2,"y":8,"width":6,"height":17,"rx":1},"part":"weights","paint":"accent"},{"tag":"rect","attrs":{"x":24,"y":8,"width":6,"height":17,"rx":1},"part":"weights","paint":"accent"},{"tag":"path","attrs":{"d":"M8 14h16v5H8M2 12H0m30 0h2"},"part":"bar","paint":"outline"}],"parts":["weights","bar"],"license":"MIT","artworkVersion":1});

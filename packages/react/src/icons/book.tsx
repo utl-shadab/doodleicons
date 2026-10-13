@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const BookIcon: IconComponent<"pages" | "detail"> = /* @__PURE__ */ createIcon({"id":"book","name":"Book","category":"productivity","tags":["read","knowledge","manual"],"shapes":[{"tag":"path","attrs":{"d":"M16 7C10 3 5 3 1 5v24c4-2 9-2 15 2 6-4 11-4 15-2V5c-4-2-9-2-15 2z"},"part":"pages","paint":"accent"},{"tag":"path","attrs":{"d":"M16 7v24M5 11l7 1M5 17l7 1M21 12l6-1M21 18l6-1"},"part":"detail","paint":"outline"}],"parts":["pages","detail"],"license":"MIT","artworkVersion":1});

@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const ScissorsIcon: IconComponent<"handles" | "blades"> = /* @__PURE__ */ createIcon({"id":"scissors","name":"Scissors","category":"creative","tags":["cut","trim","split"],"shapes":[{"tag":"circle","attrs":{"cx":8,"cy":8,"r":5},"part":"handles","paint":"accent"},{"tag":"circle","attrs":{"cx":8,"cy":25,"r":5},"part":"handles","paint":"accent"},{"tag":"path","attrs":{"d":"M12 11l17 17M12 22 29 3"},"part":"blades","paint":"outline"}],"parts":["handles","blades"],"license":"MIT","artworkVersion":1});

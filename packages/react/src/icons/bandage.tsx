@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const BandageIcon: IconComponent<"body" | "pad" | "holes"> = /* @__PURE__ */ createIcon({"id":"bandage","name":"Bandage","category":"health","tags":["injury","plaster","healing"],"shapes":[{"tag":"path","attrs":{"d":"M3 18 18 3c5-5 16 6 11 11L14 29C9 34-2 23 3 18Z"},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M10 11l11 11M11 10l11 11"},"part":"pad","paint":"outline"},{"tag":"circle","attrs":{"cx":14,"cy":18,"r":0.7},"part":"holes","paint":"fill"},{"tag":"circle","attrs":{"cx":18,"cy":14,"r":0.7},"part":"holes","paint":"fill"}],"parts":["body","pad","holes"],"license":"MIT","artworkVersion":1});

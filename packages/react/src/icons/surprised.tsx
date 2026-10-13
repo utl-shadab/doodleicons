@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const SurprisedIcon: IconComponent<"face" | "eyes" | "mouth"> = /* @__PURE__ */ createIcon({"id":"surprised","name":"Surprised","category":"expressive","tags":["wow","shock","face"],"shapes":[{"tag":"circle","attrs":{"cx":16,"cy":16,"r":13},"part":"face","paint":"accent"},{"tag":"circle","attrs":{"cx":11,"cy":11,"r":1},"part":"eyes","paint":"fill"},{"tag":"circle","attrs":{"cx":21,"cy":11,"r":1},"part":"eyes","paint":"fill"},{"tag":"ellipse","attrs":{"cx":16,"cy":22,"rx":3,"ry":4},"part":"mouth","paint":"accent"}],"parts":["face","eyes","mouth"],"license":"MIT","artworkVersion":1});

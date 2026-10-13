@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const BottleIcon: IconComponent<"cap" | "body" | "label"> = /* @__PURE__ */ createIcon({"id":"bottle","name":"Bottle","category":"health","tags":["drink","hydration","water"],"shapes":[{"tag":"rect","attrs":{"x":12,"y":2,"width":8,"height":5,"rx":1},"part":"cap","paint":"accent"},{"tag":"path","attrs":{"d":"M12 7v5l-4 5v12h16V17l-4-5V7z"},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M8 20h16M8 24h16"},"part":"label","paint":"outline"}],"parts":["cap","body","label"],"license":"MIT","artworkVersion":1});

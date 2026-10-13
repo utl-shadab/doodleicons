@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const SmileIcon: IconComponent<"face" | "eyes" | "mouth"> = /* @__PURE__ */ createIcon({"id":"smile","name":"Smile","category":"expressive","tags":["happy","face","emotion"],"shapes":[{"tag":"circle","attrs":{"cx":16,"cy":16,"r":13},"part":"face","paint":"accent"},{"tag":"circle","attrs":{"cx":11,"cy":12,"r":1},"part":"eyes","paint":"fill"},{"tag":"circle","attrs":{"cx":21,"cy":12,"r":1},"part":"eyes","paint":"fill"},{"tag":"path","attrs":{"d":"M9 20c4 6 10 6 14 0"},"part":"mouth","paint":"outline"}],"parts":["face","eyes","mouth"],"license":"MIT","artworkVersion":1});

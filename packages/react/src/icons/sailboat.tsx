@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const SailboatIcon: IconComponent<"sail" | "hull"> = /* @__PURE__ */ createIcon({"id":"sailboat","name":"Sailboat","category":"travel","tags":["boat","sea","sailing"],"shapes":[{"tag":"path","attrs":{"d":"M16 2 3 20h13z"},"part":"sail","paint":"accent"},{"tag":"path","attrs":{"d":"M19 6v14h11z"},"part":"sail","paint":"accent"},{"tag":"path","attrs":{"d":"M2 24h28l-5 6H7zM16 2v22"},"part":"hull","paint":"outline"}],"parts":["sail","hull"],"license":"MIT","artworkVersion":1});

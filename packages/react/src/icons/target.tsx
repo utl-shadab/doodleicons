@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const TargetIcon: IconComponent<"outer" | "middle" | "center"> = /* @__PURE__ */ createIcon({"id":"target","name":"Target","category":"productivity","tags":["goal","focus","objective"],"shapes":[{"tag":"circle","attrs":{"cx":16,"cy":16,"r":13},"part":"outer","paint":"accent"},{"tag":"circle","attrs":{"cx":16,"cy":16,"r":8},"part":"middle","paint":"outline"},{"tag":"circle","attrs":{"cx":16,"cy":16,"r":3},"part":"center","paint":"fill"}],"parts":["outer","middle","center"],"license":"MIT","artworkVersion":1});

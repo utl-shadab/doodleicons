@@ -1,0 +1,236 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+      }
+      body {
+        margin: 0;
+        font:
+          11px Inter,
+          Arial,
+          sans-serif;
+        color: var(--figma-color-text, #242833);
+        background: var(--figma-color-bg, #fff);
+      }
+      header {
+        padding: 17px 18px;
+        border-bottom: 1px solid var(--figma-color-border, #e6e8ec);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      h1 {
+        font-size: 18px;
+        margin: 0;
+        letter-spacing: -0.7px;
+      }
+      header span {
+        font-size: 10px;
+        color: var(--figma-color-text-secondary, #737b88);
+      }
+      main {
+        padding: 14px 16px 125px;
+      }
+      input,
+      select,
+      button {
+        font: inherit;
+        color: inherit;
+        border: 1px solid var(--figma-color-border, #e6e8ec);
+        border-radius: 5px;
+        background: var(--figma-color-bg, #fff);
+        padding: 8px;
+      }
+      button {
+        cursor: pointer;
+      }
+      button:disabled {
+        opacity: 0.5;
+        cursor: default;
+      }
+      :focus-visible {
+        outline: 2px solid #002fa7;
+        outline-offset: 2px;
+      }
+      #search {
+        width: 100%;
+        padding: 11px;
+        margin-bottom: 10px;
+      }
+      .row {
+        display: flex;
+        gap: 9px;
+        margin-bottom: 10px;
+        align-items: center;
+      }
+      .row > label {
+        flex: 1;
+        font-size: 10px;
+      }
+      select {
+        width: 100%;
+        margin-top: 5px;
+      }
+      .colors input {
+        height: 29px;
+        width: 45px;
+        padding: 2px;
+        margin-left: 4px;
+      }
+      .sizes input {
+        width: 62px;
+        margin-left: 3px;
+      }
+      #grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 7px;
+      }
+      .tile {
+        height: 88px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 9px;
+        min-width: 0;
+      }
+      .tile span {
+        font-size: 8px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+      }
+      .tile.selected {
+        border-color: #002fa7;
+        background: #edf2ff;
+        color: #242833;
+      }
+      .summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 13px 0;
+        color: var(--figma-color-text-secondary, #737b88);
+      }
+      .summary div {
+        display: flex;
+        gap: 5px;
+      }
+      .summary button {
+        padding: 5px 8px;
+      }
+      footer {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        padding: 12px 16px;
+        background: var(--figma-color-bg, #fff);
+        border-top: 1px solid var(--figma-color-border, #e6e8ec);
+      }
+      footer > div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-bottom: 8px;
+      }
+      #insert {
+        width: 100%;
+        background: #002fa7;
+        border-color: #002fa7;
+        color: white;
+        padding: 11px;
+      }
+      #clear {
+        border: 0;
+        padding: 3px;
+        font-size: 10px;
+      }
+      #status {
+        font-size: 9px;
+        min-height: 13px;
+        margin: 7px 0 0;
+        color: var(--figma-color-text-secondary, #737b88);
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>doodleicons.</h1>
+      <span>15,000 icons. 30 categories.</span>
+    </header>
+    <main>
+      <input
+        id="search"
+        type="search"
+        aria-label="Search icons"
+        placeholder="Find a little personality…"
+      />
+      <div class="row">
+        <label
+          >Category<select id="category">
+            <option value="all">UI basics — all categories</option>
+          </select></label
+        ><label
+          >Style<select id="style">
+            <option value="doodle">Doodle</option>
+            <option value="outline">Outline</option>
+            <option value="duotone">Duotone</option>
+            <option value="soft">Soft</option>
+          </select></label
+        >
+      </div>
+      <div class="row colors">
+        <label>Stroke<input id="color" type="color" value="#242833" /></label
+        ><label
+          >Primary<input id="primary" type="color" value="#5264f8" /></label
+        ><label>Accent<input id="accent" type="color" value="#b9cdfa" /></label>
+      </div>
+      <div class="row sizes">
+        <label
+          >Size<input
+            id="size"
+            type="number"
+            min="8"
+            max="512"
+            value="32" /></label
+        ><label
+          >Weight<input
+            id="stroke"
+            type="number"
+            min="0.1"
+            max="3"
+            step="0.1"
+            value="0.2"
+        /></label>
+      </div>
+      <div class="summary">
+        <span id="count"></span>
+        <div>
+          <button id="previous" aria-label="Previous page">Previous</button
+          ><button id="next" aria-label="Next page">Next</button>
+        </div>
+      </div>
+      <div id="grid" aria-label="Icon selection"></div>
+    </main>
+    <footer>
+      <div>
+        <label
+          ><input id="component" type="checkbox" />Create Figma
+          components</label
+        ><button id="clear">Clear selection</button>
+      </div>
+      <button id="insert" disabled>Insert selected icons</button>
+      <p id="status" role="status" aria-live="polite">
+        Select icons to insert on your canvas.
+      </p>
+    </footer>
+    <!-- SCRIPT -->
+  </body>
+</html>

@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const UsersIcon: IconComponent<"head" | "body" | "friend"> = /* @__PURE__ */ createIcon({"id":"users","name":"Users","category":"communication","tags":["team","group","community"],"shapes":[{"tag":"circle","attrs":{"cx":12,"cy":10,"r":5},"part":"head","paint":"accent"},{"tag":"path","attrs":{"d":"M2 28v-3c0-10 20-10 20 0v3"},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M23 5c7 0 7 10 0 10M26 19c4 1 5 5 5 9"},"part":"friend","paint":"outline"}],"parts":["head","body","friend"],"license":"MIT","artworkVersion":1});

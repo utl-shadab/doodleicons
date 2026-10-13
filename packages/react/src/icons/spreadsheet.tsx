@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const SpreadsheetIcon: IconComponent<"body" | "grid"> = /* @__PURE__ */ createIcon({"id":"spreadsheet","name":"Spreadsheet","category":"productivity","tags":["table","excel","cells"],"shapes":[{"tag":"rect","attrs":{"x":4,"y":3,"width":24,"height":27,"rx":2},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M4 11h24M4 18h24M4 24h24M12 11v19M21 11v19"},"part":"grid","paint":"outline"}],"parts":["body","grid"],"license":"MIT","artworkVersion":1});

@@ -1,0 +1,61 @@
+{
+  "name": "doodle-icon-react",
+  "version": "0.1.0",
+  "description": "Customizable original static SVG icons for React and Next.js.",
+  "type": "module",
+  "license": "MIT",
+  "sideEffects": false,
+  "author": "shadab-choudhary",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/utl-shadab/doodleicons.git",
+    "directory": "packages/react"
+  },
+  "homepage": "https://github.com/utl-shadab/doodleicons#readme",
+  "bugs": {
+    "url": "https://github.com/utl-shadab/doodleicons/issues"
+  },
+  "keywords": [
+    "icons",
+    "react",
+    "nextjs",
+    "svg",
+    "doodleicons",
+    "typescript"
+  ],
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "exports": {
+    "./library": {
+      "types": "./dist/library-icon.d.ts",
+      "import": "./dist/library-icon.js"
+    },
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./icons/*": {
+      "types": "./dist/icons/*.d.ts",
+      "import": "./dist/icons/*.js"
+    },
+    "./illustration": {
+      "types": "./dist/illustration.d.ts",
+      "import": "./dist/illustration.js"
+    }
+  },
+  "peerDependencies": {
+    "react": ">=18.2.0 <20"
+  },
+  "dependencies": {
+    "doodle-icon": "0.1.0"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "publishConfig": {
+    "access": "public"
+  }
+}

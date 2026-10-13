@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const PenToolIcon: IconComponent<"nib" | "hole" | "detail"> = /* @__PURE__ */ createIcon({"id":"pen-tool","name":"Pen tool","category":"creative","tags":["vector","bezier","design"],"shapes":[{"tag":"path","attrs":{"d":"M16 2 3 22l9 8h8l9-8z"},"part":"nib","paint":"accent"},{"tag":"circle","attrs":{"cx":16,"cy":19,"r":3},"part":"hole","paint":"outline"},{"tag":"path","attrs":{"d":"M16 2v14M12 30v-5h8v5"},"part":"detail","paint":"outline"}],"parts":["nib","hole","detail"],"license":"MIT","artworkVersion":1});

@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const ListIcon: IconComponent<"bullet" | "detail"> = /* @__PURE__ */ createIcon({"id":"list","name":"List","category":"interface","tags":["rows","bullet","layout"],"shapes":[{"tag":"circle","attrs":{"cx":6,"cy":8,"r":1},"part":"bullet","paint":"fill"},{"tag":"circle","attrs":{"cx":6,"cy":16,"r":1},"part":"bullet","paint":"fill"},{"tag":"circle","attrs":{"cx":6,"cy":24,"r":1},"part":"bullet","paint":"fill"},{"tag":"path","attrs":{"d":"M12 8h15M12 16h15M12 24h11"},"part":"detail","paint":"outline"}],"parts":["bullet","detail"],"license":"MIT","artworkVersion":1});

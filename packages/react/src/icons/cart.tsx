@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const CartIcon: IconComponent<"body" | "wheels"> = /* @__PURE__ */ createIcon({"id":"cart","name":"Cart","category":"commerce","tags":["shopping","checkout","basket"],"shapes":[{"tag":"path","attrs":{"d":"M2 3h4l4 20h16l4-15H7"},"part":"body","paint":"accent"},{"tag":"circle","attrs":{"cx":12,"cy":28,"r":2},"part":"wheels","paint":"outline"},{"tag":"circle","attrs":{"cx":25,"cy":28,"r":2},"part":"wheels","paint":"outline"}],"parts":["body","wheels"],"license":"MIT","artworkVersion":1});

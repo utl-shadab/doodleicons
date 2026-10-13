@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const ChecklistIcon: IconComponent<"body" | "items"> = /* @__PURE__ */ createIcon({"id":"checklist","name":"Checklist","category":"productivity","tags":["tasks","todo","done"],"shapes":[{"tag":"rect","attrs":{"x":3,"y":2,"width":26,"height":28,"rx":2},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M7 9l2 2 4-5M16 8h8M7 19l2 2 4-5M16 18h8M16 25h8"},"part":"items","paint":"outline"}],"parts":["body","items"],"license":"MIT","artworkVersion":1});

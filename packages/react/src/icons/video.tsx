@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const VideoIcon: IconComponent<"body" | "film"> = /* @__PURE__ */ createIcon({"id":"video","name":"Video","category":"creative","tags":["film","recording","movie"],"shapes":[{"tag":"rect","attrs":{"x":4,"y":3,"width":24,"height":26,"rx":2},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M9 3v26M23 3v26M4 9h5m14 0h5M4 16h5m14 0h5M4 23h5m14 0h5M13 11l7 5-7 5z"},"part":"film","paint":"outline"}],"parts":["body","film"],"license":"MIT","artworkVersion":1});

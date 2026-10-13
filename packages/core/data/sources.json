@@ -1,0 +1,146 @@
+[
+  {
+    "id": "tabler",
+    "name": "Tabler Icons",
+    "author": "Paweł Kuna",
+    "url": "https://github.com/tabler/tabler-icons",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/tabler/tabler-icons/blob/master/LICENSE",
+    "version": "1.2.42"
+  },
+  {
+    "id": "hugeicons",
+    "name": "Huge Icons",
+    "author": "Hugeicons",
+    "url": "https://icon-sets.iconify.design/icon-sets/hugeicons/",
+    "license": "MIT",
+    "licenseUrl": "https://spdx.org/licenses/MIT.html",
+    "version": "1.2.35"
+  },
+  {
+    "id": "lucide",
+    "name": "Lucide",
+    "author": "Lucide Contributors",
+    "url": "https://github.com/lucide-icons/lucide",
+    "license": "ISC",
+    "licenseUrl": "https://github.com/lucide-icons/lucide/blob/main/LICENSE",
+    "version": "1.2.143"
+  },
+  {
+    "id": "icon-park-outline",
+    "name": "IconPark Outline",
+    "author": "ByteDance",
+    "url": "https://github.com/bytedance/IconPark",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/bytedance/IconPark/blob/master/LICENSE",
+    "version": "1.2.4"
+  },
+  {
+    "id": "ri",
+    "name": "Remix Icon",
+    "author": "Remix Design",
+    "url": "https://github.com/cyberalien/RemixIcon",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/cyberalien/RemixIcon/blob/master/License",
+    "version": "1.2.10"
+  },
+  {
+    "id": "mdi",
+    "name": "Material Design Icons",
+    "author": "Pictogrammers",
+    "url": "https://github.com/Templarian/MaterialDesign",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/Templarian/MaterialDesign/blob/master/LICENSE",
+    "version": "1.2.3"
+  },
+  {
+    "id": "ph",
+    "name": "Phosphor",
+    "author": "Phosphor Icons",
+    "url": "https://github.com/phosphor-icons/core",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/phosphor-icons/core/blob/main/LICENSE",
+    "version": "1.2.2"
+  },
+  {
+    "id": "healthicons",
+    "name": "Health Icons",
+    "author": "Resolve to Save Lives",
+    "url": "https://github.com/resolvetosavelives/healthicons",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/resolvetosavelives/healthicons/blob/main/LICENSE",
+    "version": "1.2.13"
+  },
+  {
+    "id": "game-icons",
+    "name": "Game Icons",
+    "author": "GameIcons",
+    "url": "https://github.com/game-icons/icons",
+    "license": "CC-BY-3.0",
+    "licenseUrl": "https://github.com/game-icons/icons/blob/master/license.txt",
+    "version": "1.2.4"
+  },
+  {
+    "id": "simple-icons",
+    "name": "Simple Icons",
+    "author": "Simple Icons Collaborators",
+    "url": "https://github.com/simple-icons/simple-icons",
+    "license": "CC0-1.0",
+    "licenseUrl": "https://github.com/simple-icons/simple-icons/blob/develop/LICENSE.md",
+    "version": "1.2.100"
+  },
+  {
+    "id": "solar",
+    "name": "Solar",
+    "author": "480 Design",
+    "url": "https://www.figma.com/community/file/1166831539721848736",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "version": "1.2.13"
+  },
+  {
+    "id": "mingcute",
+    "name": "MingCute Icon",
+    "author": "MingCute Design",
+    "url": "https://github.com/Richard9394/MingCute",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://github.com/Richard9394/MingCute/blob/main/LICENSE",
+    "version": "1.2.8"
+  },
+  {
+    "id": "streamline",
+    "name": "Streamline",
+    "author": "Streamline",
+    "url": "https://github.com/webalys-hq/streamline-vectors",
+    "license": "CC-BY-4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "version": "1.2.5"
+  },
+  {
+    "id": "fluent",
+    "name": "Fluent UI System Icons",
+    "author": "Microsoft Corporation",
+    "url": "https://github.com/microsoft/fluentui-system-icons",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/microsoft/fluentui-system-icons/blob/main/LICENSE",
+    "version": "1.2.60"
+  },
+  {
+    "id": "carbon",
+    "name": "Carbon",
+    "author": "IBM",
+    "url": "https://github.com/carbon-design-system/carbon/tree/main/packages/icons",
+    "license": "Apache-2.0",
+    "licenseUrl": "https://spdx.org/licenses/Apache-2.0.html",
+    "version": "1.2.28"
+  },
+  {
+    "id": "doodleicons-studio",
+    "name": "DoodleIcons Studio",
+    "author": "DoodleIcons contributors",
+    "url": "https://github.com/utl-shadab/doodleicons",
+    "license": "MIT",
+    "licenseUrl": "https://github.com/utl-shadab/doodleicons/blob/main/LICENSE",
+    "version": "0.1.0"
+  }
+]

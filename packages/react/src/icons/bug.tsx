@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const BugIcon: IconComponent<"body" | "legs"> = /* @__PURE__ */ createIcon({"id":"bug","name":"Bug","category":"technology","tags":["debug","insect","issue"],"shapes":[{"tag":"rect","attrs":{"x":9,"y":11,"width":14,"height":18,"rx":7},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M12 11V7c0-5 8-5 8 0v4M16 11v18M3 10l6 5M2 20h7M3 29l7-5M29 10l-6 5M30 20h-7M29 29l-7-5"},"part":"legs","paint":"outline"}],"parts":["body","legs"],"license":"MIT","artworkVersion":1});

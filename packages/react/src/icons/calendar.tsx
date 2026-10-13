@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const CalendarIcon: IconComponent<"body" | "detail"> = /* @__PURE__ */ createIcon({"id":"calendar","name":"Calendar","category":"productivity","tags":["date","schedule","appointment"],"shapes":[{"tag":"rect","attrs":{"x":3,"y":6,"width":26,"height":24,"rx":2},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M3 13h26M10 2v8M22 2v8M9 19h3M20 19h3M9 25h3M20 25h3"},"part":"detail","paint":"outline"}],"parts":["body","detail"],"license":"MIT","artworkVersion":1});

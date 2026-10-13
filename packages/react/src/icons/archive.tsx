@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const ArchiveIcon: IconComponent<"body" | "handle"> = /* @__PURE__ */ createIcon({"id":"archive","name":"Archive","category":"actions","tags":["store","box","history"],"shapes":[{"tag":"rect","attrs":{"x":3,"y":4,"width":26,"height":7,"rx":2},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M6 11v17h20V11"},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M12 17h8"},"part":"handle","paint":"outline"}],"parts":["body","handle"],"license":"MIT","artworkVersion":1});

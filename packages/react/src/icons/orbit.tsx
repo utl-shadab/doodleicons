@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const OrbitIcon: IconComponent<"core" | "rings"> = /* @__PURE__ */ createIcon({"id":"orbit","name":"Orbit","category":"expressive","tags":["abstract","atom","science"],"shapes":[{"tag":"circle","attrs":{"cx":16,"cy":16,"r":7},"part":"core","paint":"accent"},{"tag":"path","attrs":{"d":"M2 26C-5 15 25-5 30 5 37 17 7 38 2 26ZM3 5c9-9 36 15 26 22C19 35-5 14 3 5Z"},"part":"rings","paint":"outline"}],"parts":["core","rings"],"license":"MIT","artworkVersion":1});

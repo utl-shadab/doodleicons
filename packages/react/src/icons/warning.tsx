@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const WarningIcon: IconComponent<"body" | "mark"> = /* @__PURE__ */ createIcon({"id":"warning","name":"Warning","category":"actions","tags":["alert","caution","danger"],"shapes":[{"tag":"path","attrs":{"d":"M16 4 2 27h28z"},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M16 12v7"},"part":"mark","paint":"outline"},{"tag":"circle","attrs":{"cx":16,"cy":23,"r":0.7},"part":"mark","paint":"fill"}],"parts":["body","mark"],"license":"MIT","artworkVersion":1});

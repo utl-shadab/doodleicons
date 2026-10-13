@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const PrinterIcon: IconComponent<"body" | "paper" | "light"> = /* @__PURE__ */ createIcon({"id":"printer","name":"Printer","category":"productivity","tags":["print","office","paper"],"shapes":[{"tag":"rect","attrs":{"x":2,"y":10,"width":28,"height":16,"rx":2},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M8 10V2h16v8M8 20h16v11H8z"},"part":"paper","paint":"accent"},{"tag":"circle","attrs":{"cx":25,"cy":15,"r":1},"part":"light","paint":"fill"}],"parts":["body","paper","light"],"license":"MIT","artworkVersion":1});

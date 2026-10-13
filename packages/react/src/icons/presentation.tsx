@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const PresentationIcon: IconComponent<"body" | "detail"> = /* @__PURE__ */ createIcon({"id":"presentation","name":"Presentation","category":"productivity","tags":["slides","deck","keynote"],"shapes":[{"tag":"rect","attrs":{"x":3,"y":4,"width":26,"height":18,"rx":2},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M16 22v9M16 25l-8 6M16 25l8 6M8 16l5-5 5 4 6-7"},"part":"detail","paint":"outline"}],"parts":["body","detail"],"license":"MIT","artworkVersion":1});

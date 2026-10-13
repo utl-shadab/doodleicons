@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const BusIcon: IconComponent<"body" | "windows" | "detail"> = /* @__PURE__ */ createIcon({"id":"bus","name":"Bus","category":"travel","tags":["public","transport","commute"],"shapes":[{"tag":"rect","attrs":{"x":5,"y":2,"width":22,"height":27,"rx":4},"part":"body","paint":"accent"},{"tag":"rect","attrs":{"x":8,"y":7,"width":16,"height":12,"rx":1},"part":"windows","paint":"accent"},{"tag":"path","attrs":{"d":"M16 7v12M9 29v2M23 29v2M1 10v7M31 10v7M9 24h3M20 24h3"},"part":"detail","paint":"outline"}],"parts":["body","windows","detail"],"license":"MIT","artworkVersion":1});

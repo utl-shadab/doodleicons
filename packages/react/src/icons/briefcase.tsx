@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const BriefcaseIcon: IconComponent<"body" | "detail" | "clasp"> = /* @__PURE__ */ createIcon({"id":"briefcase","name":"Briefcase","category":"productivity","tags":["work","business","office"],"shapes":[{"tag":"rect","attrs":{"x":2,"y":9,"width":28,"height":21,"rx":2},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M10 9V3h12v6M2 17c8 6 20 6 28 0"},"part":"detail","paint":"outline"},{"tag":"rect","attrs":{"x":13,"y":17,"width":6,"height":7,"rx":1},"part":"clasp","paint":"accent"}],"parts":["body","detail","clasp"],"license":"MIT","artworkVersion":1});

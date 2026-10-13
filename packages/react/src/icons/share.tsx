@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const ShareIcon: IconComponent<"nodes" | "connections"> = /* @__PURE__ */ createIcon({"id":"share","name":"Share","category":"actions","tags":["connect","distribute","send"],"shapes":[{"tag":"circle","attrs":{"cx":7,"cy":16,"r":4},"part":"nodes","paint":"accent"},{"tag":"circle","attrs":{"cx":25,"cy":6,"r":4},"part":"nodes","paint":"accent"},{"tag":"circle","attrs":{"cx":25,"cy":26,"r":4},"part":"nodes","paint":"accent"},{"tag":"path","attrs":{"d":"M10 14l11-6M10 18l11 6"},"part":"connections","paint":"outline"}],"parts":["nodes","connections"],"license":"MIT","artworkVersion":1});

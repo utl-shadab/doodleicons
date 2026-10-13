@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const CameraIcon: IconComponent<"body" | "lens" | "flash"> = /* @__PURE__ */ createIcon({"id":"camera","name":"Camera","category":"creative","tags":["photo","photography","capture"],"shapes":[{"tag":"path","attrs":{"d":"M3 9h7l3-5h7l3 5h6v19H3z"},"part":"body","paint":"accent"},{"tag":"circle","attrs":{"cx":16,"cy":18,"r":6},"part":"lens","paint":"outline"},{"tag":"circle","attrs":{"cx":25,"cy":13,"r":1},"part":"flash","paint":"fill"}],"parts":["body","lens","flash"],"license":"MIT","artworkVersion":1});

@@ -1,0 +1,10 @@
+node_modules
+.next
+dist
+artifacts
+package-lock.json
+packages/react/src/icons
+packages/react/src/index.ts
+packages/core/data
+apps/website/public/models
+packages/core/src/library/license-texts.ts

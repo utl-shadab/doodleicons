@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const ClipboardIcon: IconComponent<"body" | "clip" | "detail"> = /* @__PURE__ */ createIcon({"id":"clipboard","name":"Clipboard","category":"productivity","tags":["notes","board","record"],"shapes":[{"tag":"rect","attrs":{"x":5,"y":6,"width":22,"height":24,"rx":2},"part":"body","paint":"accent"},{"tag":"rect","attrs":{"x":11,"y":2,"width":10,"height":8,"rx":2},"part":"clip","paint":"accent"},{"tag":"path","attrs":{"d":"M10 16h12M10 22h8"},"part":"detail","paint":"outline"}],"parts":["body","clip","detail"],"license":"MIT","artworkVersion":1});

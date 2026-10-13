@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const BicycleIcon: IconComponent<"wheels" | "frame"> = /* @__PURE__ */ createIcon({"id":"bicycle","name":"Bicycle","category":"health","tags":["cycling","exercise","bike"],"shapes":[{"tag":"circle","attrs":{"cx":7,"cy":23,"r":6},"part":"wheels","paint":"outline"},{"tag":"circle","attrs":{"cx":25,"cy":23,"r":6},"part":"wheels","paint":"outline"},{"tag":"path","attrs":{"d":"M7 23l7-12 6 12H7M25 23 19 5h6M10 8h7M14 11h8"},"part":"frame","paint":"outline"}],"parts":["wheels","frame"],"license":"MIT","artworkVersion":1});

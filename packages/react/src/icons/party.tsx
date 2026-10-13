@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const PartyIcon: IconComponent<"cone" | "confetti"> = /* @__PURE__ */ createIcon({"id":"party","name":"Party","category":"expressive","tags":["celebrate","confetti","birthday"],"shapes":[{"tag":"path","attrs":{"d":"M10 11 2 30l20-8z"},"part":"cone","paint":"accent"},{"tag":"path","attrs":{"d":"M7 18l9 8M14 9c-4-7 5-3 2-8M21 17c8 3 4-7 10-4M23 4l-4 7M28 6l2 2M24 28l2 2"},"part":"confetti","paint":"outline"}],"parts":["cone","confetti"],"license":"MIT","artworkVersion":1});

@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const MicrophoneIcon: IconComponent<"body" | "stand"> = /* @__PURE__ */ createIcon({"id":"microphone","name":"Microphone","category":"creative","tags":["voice","podcast","recording"],"shapes":[{"tag":"rect","attrs":{"x":11,"y":2,"width":10,"height":20,"rx":5},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M6 15v3c0 12 20 12 20 0v-3M16 27v4M11 31h10"},"part":"stand","paint":"outline"}],"parts":["body","stand"],"license":"MIT","artworkVersion":1});

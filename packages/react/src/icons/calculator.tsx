@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const CalculatorIcon: IconComponent<"body" | "screen" | "detail"> = /* @__PURE__ */ createIcon({"id":"calculator","name":"Calculator","category":"commerce","tags":["math","calculate","accounting"],"shapes":[{"tag":"rect","attrs":{"x":6,"y":2,"width":20,"height":28,"rx":2},"part":"body","paint":"accent"},{"tag":"rect","attrs":{"x":10,"y":6,"width":12,"height":6,"rx":1},"part":"screen","paint":"accent"},{"tag":"path","attrs":{"d":"M10 17h2M20 17h2M10 22h2M20 22h2M10 27h2M20 26h2"},"part":"detail","paint":"outline"}],"parts":["body","screen","detail"],"license":"MIT","artworkVersion":1});

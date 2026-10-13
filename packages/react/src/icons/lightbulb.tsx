@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const LightbulbIcon: IconComponent<"bulb" | "filament"> = /* @__PURE__ */ createIcon({"id":"lightbulb","name":"Lightbulb","category":"technology","tags":["idea","innovation","inspiration"],"shapes":[{"tag":"path","attrs":{"d":"M11 23C-4 8 9-1 18 3c12 3 12 11 3 20z"},"part":"bulb","paint":"accent"},{"tag":"path","attrs":{"d":"M11 27h10M13 30h6M16 23v-9m-4 0 4 3 4-3"},"part":"filament","paint":"outline"}],"parts":["bulb","filament"],"license":"MIT","artworkVersion":1});

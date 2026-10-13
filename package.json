@@ -1,0 +1,58 @@
+{
+  "name": "doodleicons-workspace",
+  "type": "module",
+  "version": "0.1.0",
+  "private": true,
+  "workspaces": [
+    "packages/*",
+    "apps/*"
+  ],
+  "engines": {
+    "node": ">=22.20.0"
+  },
+  "scripts": {
+    "dev": "npm run build:packages && npm run dev --workspace @doodleicons/website",
+    "generate": "tsx scripts/generate.ts",
+    "import:library": "tsx scripts/import-library.ts",
+    "build:packages": "npm run generate && tsx scripts/build-packages.ts",
+    "build:figma": "tsx scripts/build-figma.ts",
+    "build": "npm run build:packages && npm run build:figma && npm run build --workspace @doodleicons/website",
+    "typecheck": "tsc --noEmit && npm run typecheck --workspaces --if-present",
+    "test": "tsx --test tests/*.test.ts tests/*.test.tsx",
+    "check": "npm run build:packages && npm run build:figma && npm run typecheck && npm test",
+    "pack:icons": "npm run build:packages && tsx scripts/pack.ts",
+    "smoke:consumer": "tsx scripts/smoke-consumer.ts",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "release:check": "tsx scripts/release-check.ts"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "latest",
+    "@fontsource/poppins": "5.3.0",
+    "@iconify-json/carbon": "1.2.28",
+    "@iconify-json/fluent": "1.2.60",
+    "@iconify-json/game-icons": "1.2.4",
+    "@iconify-json/healthicons": "1.2.13",
+    "@iconify-json/hugeicons": "1.2.35",
+    "@iconify-json/icon-park-outline": "1.2.4",
+    "@iconify-json/lucide": "1.2.143",
+    "@iconify-json/mdi": "1.2.3",
+    "@iconify-json/mingcute": "1.2.8",
+    "@iconify-json/ph": "1.2.2",
+    "@iconify-json/ri": "1.2.10",
+    "@iconify-json/simple-icons": "1.2.100",
+    "@iconify-json/solar": "1.2.13",
+    "@iconify-json/streamline": "1.2.5",
+    "@iconify-json/tabler": "1.2.42",
+    "@iconify/types": "2.0.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "esbuild": "^0.25.0",
+    "fast-xml-parser": "5.11.2",
+    "prettier": "3.6.2",
+    "sharp": "0.35.5",
+    "tsx": "^4.20.0",
+    "typescript": "^5.9.0"
+  }
+}

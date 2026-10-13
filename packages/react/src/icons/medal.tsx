@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const MedalIcon: IconComponent<"medal" | "ribbon" | "star"> = /* @__PURE__ */ createIcon({"id":"medal","name":"Medal","category":"expressive","tags":["prize","award","badge"],"shapes":[{"tag":"circle","attrs":{"cx":16,"cy":22,"r":9},"part":"medal","paint":"accent"},{"tag":"path","attrs":{"d":"M10 15 4 2h8l4 11 4-11h8l-6 13"},"part":"ribbon","paint":"outline"},{"tag":"path","attrs":{"d":"m16 17 1.5 3 3.5.5-2.5 2.5.5 3.5-3-1.5-3 1.5.5-3.5-2.5-2.5 3.5-.5z"},"part":"star","paint":"outline"}],"parts":["medal","ribbon","star"],"license":"MIT","artworkVersion":1});

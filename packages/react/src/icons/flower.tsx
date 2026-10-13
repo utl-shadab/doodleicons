@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const FlowerIcon: IconComponent<"petals" | "center"> = /* @__PURE__ */ createIcon({"id":"flower","name":"Flower","category":"expressive","tags":["bloom","nature","decorative"],"shapes":[{"tag":"path","attrs":{"d":"M16 9C5 0 0 11 9 16 0 21 5 32 16 23 27 32 32 21 23 16 32 11 27 0 16 9Z"},"part":"petals","paint":"accent"},{"tag":"circle","attrs":{"cx":16,"cy":16,"r":4},"part":"center","paint":"outline"}],"parts":["petals","center"],"license":"MIT","artworkVersion":1});

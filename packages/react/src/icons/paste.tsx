@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const PasteIcon: IconComponent<"body" | "clip" | "detail"> = /* @__PURE__ */ createIcon({"id":"paste","name":"Paste","category":"actions","tags":["clipboard","insert"],"shapes":[{"tag":"rect","attrs":{"x":6,"y":7,"width":21,"height":22,"rx":2},"part":"body","paint":"accent"},{"tag":"rect","attrs":{"x":11,"y":3,"width":10,"height":7,"rx":2},"part":"clip","paint":"accent"},{"tag":"path","attrs":{"d":"M12 16h9M12 22h6"},"part":"detail","paint":"outline"}],"parts":["body","clip","detail"],"license":"MIT","artworkVersion":1});

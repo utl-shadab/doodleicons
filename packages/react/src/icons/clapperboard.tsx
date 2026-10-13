@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const ClapperboardIcon: IconComponent<"body" | "top" | "stripes"> = /* @__PURE__ */ createIcon({"id":"clapperboard","name":"Clapperboard","category":"creative","tags":["cinema","film","production"],"shapes":[{"tag":"rect","attrs":{"x":3,"y":12,"width":26,"height":17,"rx":2},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M3 12 1 6l26-5 2 6z"},"part":"top","paint":"accent"},{"tag":"path","attrs":{"d":"M8 5l4 5M18 3l4 5M3 18h26"},"part":"stripes","paint":"outline"}],"parts":["body","top","stripes"],"license":"MIT","artworkVersion":1});

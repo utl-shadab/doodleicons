@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const MusicIcon: IconComponent<"stem" | "notes"> = /* @__PURE__ */ createIcon({"id":"music","name":"Music","category":"creative","tags":["note","audio","melody"],"shapes":[{"tag":"path","attrs":{"d":"M13 24V7l15-4v17M13 12l15-4"},"part":"stem","paint":"outline"},{"tag":"circle","attrs":{"cx":8,"cy":25,"r":5},"part":"notes","paint":"accent"},{"tag":"circle","attrs":{"cx":23,"cy":21,"r":5},"part":"notes","paint":"accent"}],"parts":["stem","notes"],"license":"MIT","artworkVersion":1});

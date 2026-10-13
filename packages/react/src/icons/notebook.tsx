@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const NotebookIcon: IconComponent<"body" | "detail"> = /* @__PURE__ */ createIcon({"id":"notebook","name":"Notebook","category":"productivity","tags":["journal","notes","diary"],"shapes":[{"tag":"rect","attrs":{"x":7,"y":2,"width":22,"height":28,"rx":2},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M13 2v28M3 7h7M3 14h7M3 21h7M3 28h7M18 9h7M18 14h5"},"part":"detail","paint":"outline"}],"parts":["body","detail"],"license":"MIT","artworkVersion":1});

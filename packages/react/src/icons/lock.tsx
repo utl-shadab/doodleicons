@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const LockIcon: IconComponent<"body" | "shackle" | "keyhole"> = /* @__PURE__ */ createIcon({"id":"lock","name":"Lock","category":"technology","tags":["secure","private","password"],"shapes":[{"tag":"rect","attrs":{"x":5,"y":13,"width":22,"height":16,"rx":2},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M10 13V8c0-9 12-9 12 0v5"},"part":"shackle","paint":"outline"},{"tag":"circle","attrs":{"cx":16,"cy":20,"r":2},"part":"keyhole","paint":"fill"},{"tag":"path","attrs":{"d":"M16 22v3"},"part":"keyhole","paint":"outline"}],"parts":["body","shackle","keyhole"],"license":"MIT","artworkVersion":1});

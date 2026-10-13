@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const ThermometerIcon: IconComponent<"body" | "scale" | "mercury"> = /* @__PURE__ */ createIcon({"id":"thermometer","name":"Thermometer","category":"health","tags":["temperature","fever","medical"],"shapes":[{"tag":"path","attrs":{"d":"M12 19V6c0-6 8-6 8 0v13a6 6 0 1 1-8 0Z"},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M16 10v15M23 7h5M23 13h3"},"part":"scale","paint":"outline"},{"tag":"circle","attrs":{"cx":16,"cy":25,"r":2},"part":"mercury","paint":"fill"}],"parts":["body","scale","mercury"],"license":"MIT","artworkVersion":1});

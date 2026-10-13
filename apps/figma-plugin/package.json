@@ -1,0 +1,13 @@
+{
+  "name": "@doodleicons/figma-plugin",
+  "version": "0.1.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "doodle-icon": "0.1.0",
+    "fflate": "0.8.3"
+  }
+}

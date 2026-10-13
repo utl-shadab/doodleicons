@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const BrainIcon: IconComponent<"body" | "folds"> = /* @__PURE__ */ createIcon({"id":"brain","name":"Brain","category":"technology","tags":["intelligence","mind","thinking"],"shapes":[{"tag":"path","attrs":{"d":"M16 5c-5-6-11 0-9 5-7 0-7 10-2 11-2 8 9 11 11 4 2 7 13 4 11-4 5-1 5-11-2-11 2-5-4-11-9-5Z"},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M16 5v20M7 10l4 3M5 21l6-4M25 10l-4 3M27 21l-6-4"},"part":"folds","paint":"outline"}],"parts":["body","folds"],"license":"MIT","artworkVersion":1});

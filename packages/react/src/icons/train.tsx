@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const TrainIcon: IconComponent<"body" | "window" | "detail"> = /* @__PURE__ */ createIcon({"id":"train","name":"Train","category":"travel","tags":["rail","railway","station"],"shapes":[{"tag":"rect","attrs":{"x":6,"y":2,"width":20,"height":24,"rx":5},"part":"body","paint":"accent"},{"tag":"rect","attrs":{"x":10,"y":6,"width":12,"height":9,"rx":2},"part":"window","paint":"accent"},{"tag":"path","attrs":{"d":"M8 31l4-5M24 31l-4-5M10 21h2M20 21h2"},"part":"detail","paint":"outline"}],"parts":["body","window","detail"],"license":"MIT","artworkVersion":1});

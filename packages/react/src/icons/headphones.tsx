@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const HeadphonesIcon: IconComponent<"band" | "earpads"> = /* @__PURE__ */ createIcon({"id":"headphones","name":"Headphones","category":"creative","tags":["music","listen","audio"],"shapes":[{"tag":"path","attrs":{"d":"M5 18v-4C5-1 27-1 27 14v4"},"part":"band","paint":"outline"},{"tag":"rect","attrs":{"x":3,"y":15,"width":7,"height":14,"rx":3},"part":"earpads","paint":"accent"},{"tag":"rect","attrs":{"x":22,"y":15,"width":7,"height":14,"rx":3},"part":"earpads","paint":"accent"}],"parts":["band","earpads"],"license":"MIT","artworkVersion":1});

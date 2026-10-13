@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const ChipIcon: IconComponent<"body" | "core" | "pins"> = /* @__PURE__ */ createIcon({"id":"chip","name":"Chip","category":"technology","tags":["processor","cpu","hardware"],"shapes":[{"tag":"rect","attrs":{"x":7,"y":7,"width":18,"height":18,"rx":2},"part":"body","paint":"accent"},{"tag":"rect","attrs":{"x":12,"y":12,"width":8,"height":8,"rx":1},"part":"core","paint":"accent"},{"tag":"path","attrs":{"d":"M11 2v5M16 2v5M21 2v5M11 25v5M16 25v5M21 25v5M2 11h5M2 16h5M2 21h5M25 11h5M25 16h5M25 21h5"},"part":"pins","paint":"outline"}],"parts":["body","core","pins"],"license":"MIT","artworkVersion":1});

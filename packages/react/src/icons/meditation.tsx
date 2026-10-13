@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const MeditationIcon: IconComponent<"head" | "body"> = /* @__PURE__ */ createIcon({"id":"meditation","name":"Meditation","category":"health","tags":["mindfulness","calm","yoga"],"shapes":[{"tag":"circle","attrs":{"cx":16,"cy":6,"r":4},"part":"head","paint":"accent"},{"tag":"path","attrs":{"d":"M10 14l-3 8H2M22 14l3 8h5M12 17v6L4 28c9 4 15 3 24 0l-8-5v-6M10 30l8-3"},"part":"body","paint":"outline"}],"parts":["head","body"],"license":"MIT","artworkVersion":1});

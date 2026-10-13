@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const ChartIcon: IconComponent<"axis" | "bars"> = /* @__PURE__ */ createIcon({"id":"chart","name":"Chart","category":"commerce","tags":["analytics","bars","growth"],"shapes":[{"tag":"path","attrs":{"d":"M3 3v26h27"},"part":"axis","paint":"outline"},{"tag":"rect","attrs":{"x":7,"y":18,"width":4,"height":11,"rx":0},"part":"bars","paint":"accent"},{"tag":"rect","attrs":{"x":15,"y":11,"width":4,"height":18,"rx":0},"part":"bars","paint":"accent"},{"tag":"rect","attrs":{"x":23,"y":5,"width":4,"height":24,"rx":0},"part":"bars","paint":"accent"}],"parts":["axis","bars"],"license":"MIT","artworkVersion":1});

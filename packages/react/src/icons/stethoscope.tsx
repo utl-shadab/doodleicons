@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const StethoscopeIcon: IconComponent<"tube" | "chestpiece"> = /* @__PURE__ */ createIcon({"id":"stethoscope","name":"Stethoscope","category":"health","tags":["doctor","examination","medical"],"shapes":[{"tag":"path","attrs":{"d":"M4 3v10c0 12 16 12 16 0V3M2 3h5M17 3h5M12 22c0 13 17 11 17 1v-4"},"part":"tube","paint":"outline"},{"tag":"circle","attrs":{"cx":28,"cy":15,"r":3},"part":"chestpiece","paint":"accent"}],"parts":["tube","chestpiece"],"license":"MIT","artworkVersion":1});

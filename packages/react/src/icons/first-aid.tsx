@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const FirstAidIcon: IconComponent<"body" | "handle" | "cross"> = /* @__PURE__ */ createIcon({"id":"first-aid","name":"First aid","category":"health","tags":["emergency","kit","medical"],"shapes":[{"tag":"rect","attrs":{"x":3,"y":8,"width":26,"height":21,"rx":2},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M10 8V3h12v5"},"part":"handle","paint":"outline"},{"tag":"path","attrs":{"d":"M13 13h6v4h4v5h-4v4h-6v-4H9v-5h4z"},"part":"cross","paint":"outline"}],"parts":["body","handle","cross"],"license":"MIT","artworkVersion":1});

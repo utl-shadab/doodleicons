@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const HelpIcon: IconComponent<"body" | "mark"> = /* @__PURE__ */ createIcon({"id":"help","name":"Help","category":"actions","tags":["question","support","answer"],"shapes":[{"tag":"circle","attrs":{"cx":16,"cy":16,"r":12},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M12 11c0-5 9-5 9 0 0 4-5 4-5 8"},"part":"mark","paint":"outline"},{"tag":"circle","attrs":{"cx":16,"cy":24,"r":0.7},"part":"mark","paint":"fill"}],"parts":["body","mark"],"license":"MIT","artworkVersion":1});

@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const InfoIcon: IconComponent<"body" | "mark"> = /* @__PURE__ */ createIcon({"id":"info","name":"Information","category":"actions","tags":["about","notice","help"],"shapes":[{"tag":"circle","attrs":{"cx":16,"cy":16,"r":12},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M14 15h2v8h3"},"part":"mark","paint":"outline"},{"tag":"circle","attrs":{"cx":16,"cy":10,"r":0.7},"part":"mark","paint":"fill"}],"parts":["body","mark"],"license":"MIT","artworkVersion":1});

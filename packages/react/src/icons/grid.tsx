@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const GridIcon: IconComponent<"body"> = /* @__PURE__ */ createIcon({"id":"grid","name":"Grid","category":"interface","tags":["layout","tiles","squares"],"shapes":[{"tag":"rect","attrs":{"x":5,"y":5,"width":9,"height":9,"rx":2},"part":"body","paint":"accent"},{"tag":"rect","attrs":{"x":18,"y":5,"width":9,"height":9,"rx":2},"part":"body","paint":"accent"},{"tag":"rect","attrs":{"x":5,"y":18,"width":9,"height":9,"rx":2},"part":"body","paint":"accent"},{"tag":"rect","attrs":{"x":18,"y":18,"width":9,"height":9,"rx":2},"part":"body","paint":"accent"}],"parts":["body"],"license":"MIT","artworkVersion":1});

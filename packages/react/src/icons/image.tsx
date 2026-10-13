@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const ImageIcon: IconComponent<"body" | "sun" | "mountains"> = /* @__PURE__ */ createIcon({"id":"image","name":"Image","category":"creative","tags":["photo","picture","landscape"],"shapes":[{"tag":"rect","attrs":{"x":3,"y":4,"width":26,"height":24,"rx":2},"part":"body","paint":"accent"},{"tag":"circle","attrs":{"cx":11,"cy":11,"r":3},"part":"sun","paint":"outline"},{"tag":"path","attrs":{"d":"M4 25l9-10 6 6 5-5 5 6"},"part":"mountains","paint":"outline"}],"parts":["body","sun","mountains"],"license":"MIT","artworkVersion":1});

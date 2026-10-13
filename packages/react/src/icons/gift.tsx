@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const GiftIcon: IconComponent<"body" | "ribbon"> = /* @__PURE__ */ createIcon({"id":"gift","name":"Gift","category":"commerce","tags":["present","surprise","reward"],"shapes":[{"tag":"rect","attrs":{"x":2,"y":11,"width":28,"height":6,"rx":2},"part":"body","paint":"accent"},{"tag":"rect","attrs":{"x":5,"y":17,"width":22,"height":12,"rx":2},"part":"body","paint":"accent"},{"tag":"path","attrs":{"d":"M16 11v18M16 11C-4 11 7-7 16 11c20 0 9-18 0 0"},"part":"ribbon","paint":"outline"}],"parts":["body","ribbon"],"license":"MIT","artworkVersion":1});

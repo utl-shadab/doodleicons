@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const GlobeIcon: IconComponent<"body" | "meridian" | "latitude"> = /* @__PURE__ */ createIcon({"id":"globe","name":"Globe","category":"travel","tags":["world","international","earth"],"shapes":[{"tag":"circle","attrs":{"cx":16,"cy":16,"r":14},"part":"body","paint":"accent"},{"tag":"ellipse","attrs":{"cx":16,"cy":16,"rx":6,"ry":14},"part":"meridian","paint":"accent"},{"tag":"path","attrs":{"d":"M2 16h28M5 8h22M5 24h22"},"part":"latitude","paint":"outline"}],"parts":["body","meridian","latitude"],"license":"MIT","artworkVersion":1});

@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const HandshakeIcon: IconComponent<"hands" | "detail"> = /* @__PURE__ */ createIcon({"id":"handshake","name":"Handshake","category":"communication","tags":["agreement","partnership","trust"],"shapes":[{"tag":"path","attrs":{"d":"M2 13l6-7 6 2 5-2 11 9-5 11-10 3L2 17z"},"part":"hands","paint":"accent"},{"tag":"path","attrs":{"d":"M14 8 9 14l4 3 5-4 8 8M9 21l6 8M14 20l7 7"},"part":"detail","paint":"outline"}],"parts":["hands","detail"],"license":"MIT","artworkVersion":1});

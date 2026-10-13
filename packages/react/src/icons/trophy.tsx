@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const TrophyIcon: IconComponent<"cup" | "stand"> = /* @__PURE__ */ createIcon({"id":"trophy","name":"Trophy","category":"expressive","tags":["winner","award","achievement"],"shapes":[{"tag":"path","attrs":{"d":"M8 3h16v11c0 12-16 12-16 0z"},"part":"cup","paint":"accent"},{"tag":"path","attrs":{"d":"M8 7H2c0 9 4 11 8 11M24 7h6c0 9-4 11-8 11M16 23v6M9 30h14"},"part":"stand","paint":"outline"}],"parts":["cup","stand"],"license":"MIT","artworkVersion":1});

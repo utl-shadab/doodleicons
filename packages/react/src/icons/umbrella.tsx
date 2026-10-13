@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const UmbrellaIcon: IconComponent<"canopy" | "handle"> = /* @__PURE__ */ createIcon({"id":"umbrella","name":"Umbrella","category":"travel","tags":["rain","shelter","weather"],"shapes":[{"tag":"path","attrs":{"d":"M2 16c0-17 28-17 28 0z"},"part":"canopy","paint":"accent"},{"tag":"path","attrs":{"d":"M16 2v24c0 7-9 7-9 0M9 16c0-8 2-12 7-14 5 2 7 6 7 14"},"part":"handle","paint":"outline"}],"parts":["canopy","handle"],"license":"MIT","artworkVersion":1});

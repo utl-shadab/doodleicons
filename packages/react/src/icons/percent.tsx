@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const PercentIcon: IconComponent<"dots" | "slash"> = /* @__PURE__ */ createIcon({"id":"percent","name":"Percent","category":"commerce","tags":["discount","rate","percentage"],"shapes":[{"tag":"circle","attrs":{"cx":9,"cy":9,"r":5},"part":"dots","paint":"accent"},{"tag":"circle","attrs":{"cx":23,"cy":23,"r":5},"part":"dots","paint":"accent"},{"tag":"path","attrs":{"d":"M5 28 27 4"},"part":"slash","paint":"outline"}],"parts":["dots","slash"],"license":"MIT","artworkVersion":1});

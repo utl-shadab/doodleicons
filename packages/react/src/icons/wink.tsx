@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const WinkIcon: IconComponent<"face" | "eyes" | "expression"> = /* @__PURE__ */ createIcon({"id":"wink","name":"Wink","category":"expressive","tags":["playful","face","emoji"],"shapes":[{"tag":"circle","attrs":{"cx":16,"cy":16,"r":13},"part":"face","paint":"accent"},{"tag":"circle","attrs":{"cx":11,"cy":12,"r":1},"part":"eyes","paint":"fill"},{"tag":"path","attrs":{"d":"M19 12h5M9 20c4 6 10 6 14 0"},"part":"expression","paint":"outline"}],"parts":["face","eyes","expression"],"license":"MIT","artworkVersion":1});

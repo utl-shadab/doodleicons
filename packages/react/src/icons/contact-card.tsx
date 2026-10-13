@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const ContactCardIcon: IconComponent<"body" | "avatar" | "detail"> = /* @__PURE__ */ createIcon({"id":"contact-card","name":"Contact card","category":"communication","tags":["id","identity","profile"],"shapes":[{"tag":"rect","attrs":{"x":3,"y":5,"width":26,"height":23,"rx":2},"part":"body","paint":"accent"},{"tag":"circle","attrs":{"cx":11,"cy":13,"r":3},"part":"avatar","paint":"outline"},{"tag":"path","attrs":{"d":"M6 23c0-7 10-7 10 0M20 11h5M20 16h5M20 21h3"},"part":"detail","paint":"outline"}],"parts":["body","avatar","detail"],"license":"MIT","artworkVersion":1});

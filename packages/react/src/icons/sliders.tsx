@@ -1,0 +1,3 @@
+// Generated from canonical artwork. Run npm run generate to update.
+import { createIcon, type IconComponent } from "../create-icon.js";
+export const SlidersIcon: IconComponent<"detail" | "knobs"> = /* @__PURE__ */ createIcon({"id":"sliders","name":"Sliders","category":"interface","tags":["settings","controls","preferences"],"shapes":[{"tag":"path","attrs":{"d":"M5 8h7m6 0h9M5 16h15m6 0h1M5 24h3m6 0h13"},"part":"detail","paint":"outline"},{"tag":"circle","attrs":{"cx":15,"cy":8,"r":3},"part":"knobs","paint":"accent"},{"tag":"circle","attrs":{"cx":23,"cy":16,"r":3},"part":"knobs","paint":"accent"},{"tag":"circle","attrs":{"cx":11,"cy":24,"r":3},"part":"knobs","paint":"accent"}],"parts":["detail","knobs"],"license":"MIT","artworkVersion":1});
