@@ -14,7 +14,7 @@ The project currently includes:
 
 - **15,000 library drawings** in 30 categories, with 500 drawings in each category. These come from 15 open-source icon sets, plus 500 original wireframe surfaces, 500 isometric compositions, and 500 geometric studies. Different source drawings of the same subject count separately.
 - **200 original UI concepts** with four vector treatments, exposed as individual React icons.
-- **33 original illustration studies** across 11 visual families, available as detailed SVG compositions. These are separate from the 15,000-icon library.
+- **550 original illustration studies** across 11 visual families, with 50 distinct product-ready SVG compositions in each family. These are separate from the 15,000-icon library.
 - A browser gallery with instant search, category and source filters, infinite scroll, per-icon customization, and SVG, PNG, and SVG ZIP export.
 - An offline Figma development plugin for inserting editable vectors and reusable components.
 
@@ -183,7 +183,7 @@ docs/               Artwork provenance, release guide, and roadmap
 
 Project code and original artwork are MIT licensed. Imported artwork keeps its upstream license and attribution. Source-specific notices are included in the repository and package files; SVG exports also include attribution in their descriptions where applicable. Read [`THIRD_PARTY_NOTICES.md`](packages/core/THIRD_PARTY_NOTICES.md) and the license files before redistributing artwork. Brand icons may also be subject to trademark rights.
 
-The 15,000 library drawings, 200 named UI concepts, and 33 illustration studies are separate collections with separate APIs. Counts include distinct source drawings, not 15,000 unique concepts or every subject in every style. The library does not contain 500 drawings for every possible subject/style combination.
+The 15,000 library drawings, 200 named UI concepts, and 550 illustration studies are separate collections with separate APIs. The 550 studies provide 50 compositions in each of 11 visual families. Counts include distinct source drawings, not 15,000 unique concepts or every subject/style combination in the main icon library. The library does not contain 500 drawings for every possible subject/style combination.
 
 ## Contributing
 

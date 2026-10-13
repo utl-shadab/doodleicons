@@ -11,6 +11,11 @@ import {
 import { renderCollectionSvg } from "../packages/core/src/collections/render";
 test("all eleven reference families have separate vector compositions and resolvable gradients", async () => {
   assert.equal(collections.length, 11);
+  assert.deepEqual(
+    collections.map((collection) => collection.assets.length),
+    Array.from({ length: 11 }, () => 50),
+  );
+  assert.equal(collectionArtworks.length, 550);
   assert.equal(
     new Set(collectionArtworks.map((item) => item.category)).size,
     10,

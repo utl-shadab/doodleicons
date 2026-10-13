@@ -1,15 +1,18 @@
 "use client";
 import type { Category } from "doodle-icon";
-import { useEffect, useRef, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { Illustration } from "doodle-icon-react/illustration";
 import { renderCollectionSvg } from "doodle-icon/collections/render";
 import type {
-  ArtworkCollection,
   CollectionArtwork,
   ArtworkOptions,
+  CollectionId,
 } from "doodle-icon/collections";
 import { downloadBlob, downloadPng } from "@/lib/utils/download";
-function defaults(collection: ArtworkCollection): ArtworkOptions {
+import { fetchCollectionAssets } from "@/lib/api/collections-client";
+import type { CollectionSummary } from "@/types/collections";
+
+function defaults(collection: CollectionSummary): ArtworkOptions {
   return {
     ink: collection.ink,
     primary: collection.primary,
@@ -23,11 +26,11 @@ export function CollectionExplorer({
   collections,
   subjects,
 }: {
-  collections: readonly ArtworkCollection[];
+  collections: readonly CollectionSummary[];
   subjects: readonly Category[];
 }) {
   const [selected, setSelected] = useState<{
-    collection: ArtworkCollection;
+    collection: CollectionSummary;
     artwork: CollectionArtwork;
   } | null>(null);
   const [options, setOptions] = useState<ArtworkOptions>({});
@@ -36,7 +39,51 @@ export function CollectionExplorer({
   const [query, setQuery] = useState("");
   const [family, setFamily] = useState("all");
   const [subject, setSubject] = useState("all");
+  const [loadedAssets, setLoadedAssets] = useState<
+    Partial<Record<CollectionId, readonly CollectionArtwork[]>>
+  >({});
+  const [loadingCollections, setLoadingCollections] = useState<
+    Partial<Record<CollectionId, boolean>>
+  >({});
+  const [failedCollections, setFailedCollections] = useState<
+    Partial<Record<CollectionId, boolean>>
+  >({});
+  const loadedIds = useRef(new Set<CollectionId>());
+  const pendingRequests = useRef(new Map<CollectionId, Promise<void>>());
   const inspector = useRef<HTMLElement>(null);
+  const gallery = useRef<HTMLDivElement>(null);
+
+  const loadCollection = useCallback((id: CollectionId): Promise<void> => {
+    if (loadedIds.current.has(id)) return Promise.resolve();
+    const pending = pendingRequests.current.get(id);
+    if (pending) return pending;
+
+    setLoadingCollections((current) => ({ ...current, [id]: true }));
+    setFailedCollections((current) => ({ ...current, [id]: false }));
+    const request = fetchCollectionAssets(id)
+      .then((assets) => {
+        loadedIds.current.add(id);
+        setLoadedAssets((current) => ({ ...current, [id]: assets }));
+      })
+      .catch(() => {
+        setFailedCollections((current) => ({ ...current, [id]: true }));
+      })
+      .finally(() => {
+        pendingRequests.current.delete(id);
+        setLoadingCollections((current) => ({ ...current, [id]: false }));
+      });
+    pendingRequests.current.set(id, request);
+    return request;
+  }, []);
+
+  const loadAllCollections = useCallback(() => {
+    return Promise.all(collections.map((collection) => loadCollection(collection.id)));
+  }, [collections, loadCollection]);
+
+  useEffect(() => {
+    if (query.trim() || subject !== "all") void loadAllCollections();
+  }, [query, subject, loadAllCollections]);
+
   useEffect(() => {
     if (selected && window.innerWidth <= 760)
       inspector.current?.scrollIntoView({
@@ -44,10 +91,46 @@ export function CollectionExplorer({
         behavior: "instant",
       });
   }, [selected]);
-  const choose = (
-    collection: ArtworkCollection,
-    artwork: CollectionArtwork,
-  ) => {
+
+  const visible = collections
+    .filter((collection) => family === "all" || collection.id === family)
+    .map((collection) => {
+      const availableAssets =
+        loadedAssets[collection.id] ?? collection.previewAssets;
+      return {
+        ...collection,
+        isLoaded: Boolean(loadedAssets[collection.id]),
+        assets: availableAssets.filter(
+          (artwork) =>
+            (subject === "all" || artwork.category === subject) &&
+            `${artwork.name} ${artwork.subject} ${collection.name}`
+              .toLowerCase()
+              .includes(query.toLowerCase().trim()),
+        ),
+      };
+    })
+    .filter((collection) => collection.assets.length);
+
+  useEffect(() => {
+    const root = gallery.current;
+    if (!root || !("IntersectionObserver" in window)) return;
+    const observer = new IntersectionObserver(
+      (entries) => {
+        for (const entry of entries) {
+          if (!entry.isIntersecting) continue;
+          const id = entry.target.getAttribute("data-collection-id");
+          if (id) void loadCollection(id as CollectionId);
+          observer.unobserve(entry.target);
+        }
+      },
+      { rootMargin: "700px 0px" },
+    );
+    root
+      .querySelectorAll<HTMLElement>("[data-collection-id]")
+      .forEach((section) => observer.observe(section));
+    return () => observer.disconnect();
+  }, [family, loadedAssets, query, subject, loadCollection]);
+  const choose = (collection: CollectionSummary, artwork: CollectionArtwork) => {
     setSelected({ collection, artwork });
     setOptions(defaults(collection));
     setStatus("");
@@ -85,19 +168,6 @@ export function CollectionExplorer({
       setStatus("Clipboard unavailable. Download the editable SVG instead.");
     }
   };
-  const visible = collections
-    .filter((collection) => family === "all" || collection.id === family)
-    .map((collection) => ({
-      ...collection,
-      assets: collection.assets.filter(
-        (artwork) =>
-          (subject === "all" || artwork.category === subject) &&
-          `${artwork.name} ${artwork.subject} ${collection.name}`
-            .toLowerCase()
-            .includes(query.toLowerCase().trim()),
-      ),
-    }))
-    .filter((collection) => collection.assets.length);
   return (
     <>
       <div className="collection-filter">
@@ -114,7 +184,11 @@ export function CollectionExplorer({
           <span className="sr-only">Visual collection</span>
           <select
             value={family}
-            onChange={(event) => setFamily(event.target.value)}
+            onChange={(event) => {
+              const id = event.target.value;
+              setFamily(id);
+              if (id !== "all") void loadCollection(id as CollectionId);
+            }}
           >
             <option value="all">All 11 collections</option>
             {collections.map((collection) => (
@@ -154,7 +228,10 @@ export function CollectionExplorer({
           <button
             aria-pressed={family === collection.id}
             key={collection.id}
-            onClick={() => setFamily(collection.id)}
+            onClick={() => {
+              setFamily(collection.id);
+              void loadCollection(collection.id);
+            }}
           >
             {collection.name}
           </button>
@@ -165,12 +242,13 @@ export function CollectionExplorer({
           selected ? "collection-workspace with-editor" : "collection-workspace"
         }
       >
-        <div>
+        <div ref={gallery}>
           {visible.length ? (
             visible.map((collection) => (
               <section
                 className="collection-family"
                 key={collection.id}
+                data-collection-id={collection.id}
                 aria-labelledby={`heading-${collection.id}`}
               >
                 <div className="family-heading">
@@ -179,10 +257,34 @@ export function CollectionExplorer({
                     <p>{collection.description}</p>
                   </div>
                   <span>
-                    {collection.assets.length}{" "}
-                    {collection.assets.length === 1 ? "study" : "studies"}
+                    {collection.isLoaded || query.trim() || subject !== "all"
+                      ? collection.assets.length
+                      : collection.assetCount}{" "}
+                    {(collection.isLoaded || query.trim() || subject !== "all"
+                      ? collection.assets.length
+                      : collection.assetCount) === 1
+                      ? "study"
+                      : "studies"}
                   </span>
                 </div>
+                {!collection.isLoaded && (
+                  <div className="collection-load-more">
+                    <button
+                      className="button"
+                      onClick={() => void loadCollection(collection.id)}
+                      disabled={loadingCollections[collection.id]}
+                    >
+                      {loadingCollections[collection.id]
+                        ? "Loading illustrations…"
+                        : failedCollections[collection.id]
+                          ? "Retry loading all 50 illustrations"
+                          : "Load all 50 illustrations"}
+                    </button>
+                    {loadingCollections[collection.id] && (
+                      <span role="status">Loading this collection…</span>
+                    )}
+                  </div>
+                )}
                 <div className="collection-grid">
                   {collection.assets.map((artwork) => (
                     <button
@@ -215,8 +317,10 @@ export function CollectionExplorer({
             ))
           ) : (
             <p className="collection-empty">
-              No artwork is available for this combination yet. The target
-              remains 500 concepts in each subject and visual family.
+              {(query.trim() || subject !== "all") &&
+              Object.values(loadingCollections).some(Boolean)
+                ? "Finding matching illustrations…"
+                : "No artwork matches these filters. Try another search or category."}
             </p>
           )}
         </div>

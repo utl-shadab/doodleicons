@@ -24,8 +24,8 @@ export function CollectionsSection({
           <span>{data.available} editable vector studies</span>
           <span>Original studio compositions with named, editable parts</span>
           <p>
-            Browse the main library for 15,000 artworks across 30 categories.
-            These 33 illustrated scenes are a separate studio collection.
+            Browse 50 distinct product-ready illustrations in each visual
+            collection, or explore the 15,000-icon library across 30 categories.
           </p>
         </div>
       </div>

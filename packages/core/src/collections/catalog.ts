@@ -2,6 +2,7 @@ import type { CategoryId } from "../types.js";
 import * as scene from "./scenes.js";
 import * as dimensional from "./dimensional.js";
 import * as wire from "./wireframes.js";
+import { createPremiumProductStudies } from "./popular-product-art.js";
 import type {
   ArtworkCollection,
   CollectionArtwork,
@@ -57,6 +58,16 @@ function makeAssets(
     };
   });
 }
+function makeCollectionAssets(
+  collection: CollectionId,
+  entries: readonly Entry[],
+  rotation: number,
+): CollectionArtwork[] {
+  return [
+    ...makeAssets(collection, entries),
+    ...createPremiumProductStudies(collection, rotation, 47),
+  ];
+}
 export const collections: readonly ArtworkCollection[] = [
   {
     id: "duotone-scenes",
@@ -68,26 +79,30 @@ export const collections: readonly ArtworkCollection[] = [
     ink: "#123b8e",
     primary: "#2c5ed5",
     secondary: "#c0dafa",
-    assets: makeAssets("duotone-scenes", [
+    assets: makeCollectionAssets(
+      "duotone-scenes",
       [
-        "verified-capture",
-        "Verified capture",
-        "Media & creative",
-        scene.captureScene,
+        [
+          "verified-capture",
+          "Verified capture",
+          "Media & creative",
+          scene.captureScene,
+        ],
+        [
+          "connected-devices",
+          "Connected devices",
+          "Cloud & technology",
+          scene.connectedScene,
+        ],
+        [
+          "identity-scan",
+          "Identity scan",
+          "Identity & security",
+          scene.identityScene,
+        ],
       ],
-      [
-        "connected-devices",
-        "Connected devices",
-        "Cloud & technology",
-        scene.connectedScene,
-      ],
-      [
-        "identity-scan",
-        "Identity scan",
-        "Identity & security",
-        scene.identityScene,
-      ],
-    ]),
+      0,
+    ),
   },
   {
     id: "soft-outline",
@@ -98,11 +113,20 @@ export const collections: readonly ArtworkCollection[] = [
     ink: "#111111",
     primary: "#f7b8c9",
     secondary: "#fbe2e9",
-    assets: makeAssets("soft-outline", [
-      ["access-key", "Access key", "Identity & security", scene.softKey],
-      ["shelter", "Shelter", "Travel & environment", scene.softUmbrella],
-      ["new-message", "New message", "Communication & social", scene.softMail],
-    ]),
+    assets: makeCollectionAssets(
+      "soft-outline",
+      [
+        ["access-key", "Access key", "Identity & security", scene.softKey],
+        ["shelter", "Shelter", "Travel & environment", scene.softUmbrella],
+        [
+          "new-message",
+          "New message",
+          "Communication & social",
+          scene.softMail,
+        ],
+      ],
+      1,
+    ),
   },
   {
     id: "character-doodle",
@@ -113,26 +137,30 @@ export const collections: readonly ArtworkCollection[] = [
     ink: "#171714",
     primary: "#171714",
     secondary: "#e4dfd1",
-    assets: makeAssets("character-doodle", [
+    assets: makeCollectionAssets(
+      "character-doodle",
       [
-        "curious-world",
-        "Curious world",
-        "Travel & environment",
-        scene.characterGlobe,
+        [
+          "curious-world",
+          "Curious world",
+          "Travel & environment",
+          scene.characterGlobe,
+        ],
+        [
+          "happy-stride",
+          "Happy stride",
+          "Health & lifestyle",
+          scene.characterRunner,
+        ],
+        [
+          "friendly-browser",
+          "Friendly browser",
+          "Interface & navigation",
+          scene.characterBrowser,
+        ],
       ],
-      [
-        "happy-stride",
-        "Happy stride",
-        "Health & lifestyle",
-        scene.characterRunner,
-      ],
-      [
-        "friendly-browser",
-        "Friendly browser",
-        "Interface & navigation",
-        scene.characterBrowser,
-      ],
-    ]),
+      2,
+    ),
   },
   {
     id: "editorial-doodle",
@@ -144,21 +172,25 @@ export const collections: readonly ArtworkCollection[] = [
     ink: "#141414",
     primary: "#141414",
     secondary: "#e0e0e0",
-    assets: makeAssets("editorial-doodle", [
-      ["lift-off", "Lift off", "Business & growth", scene.editorialLaunch],
+    assets: makeCollectionAssets(
+      "editorial-doodle",
       [
-        "growth-report",
-        "Growth report",
-        "Commerce & finance",
-        scene.editorialAnalytics,
+        ["lift-off", "Lift off", "Business & growth", scene.editorialLaunch],
+        [
+          "growth-report",
+          "Growth report",
+          "Commerce & finance",
+          scene.editorialAnalytics,
+        ],
+        [
+          "creative-mind",
+          "Creative mind",
+          "AI & technology",
+          scene.editorialIdea,
+        ],
       ],
-      [
-        "creative-mind",
-        "Creative mind",
-        "AI & technology",
-        scene.editorialIdea,
-      ],
-    ]),
+      3,
+    ),
   },
   {
     id: "character-scenes",
@@ -170,26 +202,30 @@ export const collections: readonly ArtworkCollection[] = [
     ink: "#30313b",
     primary: "#5264ee",
     secondary: "#cbd3e4",
-    assets: makeAssets("character-scenes", [
+    assets: makeCollectionAssets(
+      "character-scenes",
       [
-        "finding-answers",
-        "Finding answers",
-        "Search & discovery",
-        scene.searchPerson,
+        [
+          "finding-answers",
+          "Finding answers",
+          "Search & discovery",
+          scene.searchPerson,
+        ],
+        [
+          "connection-lost",
+          "Connection lost",
+          "Actions & status",
+          scene.offlinePerson,
+        ],
+        [
+          "work-approved",
+          "Work approved",
+          "Files & productivity",
+          scene.successPerson,
+        ],
       ],
-      [
-        "connection-lost",
-        "Connection lost",
-        "Actions & status",
-        scene.offlinePerson,
-      ],
-      [
-        "work-approved",
-        "Work approved",
-        "Files & productivity",
-        scene.successPerson,
-      ],
-    ]),
+      4,
+    ),
   },
   {
     id: "color-isometric",
@@ -201,26 +237,30 @@ export const collections: readonly ArtworkCollection[] = [
     ink: "#141a16",
     primary: "#84c65b",
     secondary: "#bae3e4",
-    assets: makeAssets("color-isometric", [
+    assets: makeCollectionAssets(
+      "color-isometric",
       [
-        "secure-vault",
-        "Secure vault",
-        "Commerce & finance",
-        dimensional.isometricVault,
+        [
+          "secure-vault",
+          "Secure vault",
+          "Commerce & finance",
+          dimensional.isometricVault,
+        ],
+        [
+          "protected-value",
+          "Protected value",
+          "Identity & security",
+          dimensional.isometricDiamond,
+        ],
+        [
+          "growth-modules",
+          "Growth modules",
+          "Business & growth",
+          dimensional.isometricGrowth,
+        ],
       ],
-      [
-        "protected-value",
-        "Protected value",
-        "Identity & security",
-        dimensional.isometricDiamond,
-      ],
-      [
-        "growth-modules",
-        "Growth modules",
-        "Business & growth",
-        dimensional.isometricGrowth,
-      ],
-    ]),
+      5,
+    ),
   },
   {
     id: "gradient-dimensional",
@@ -232,26 +272,30 @@ export const collections: readonly ArtworkCollection[] = [
     ink: "#484dca",
     primary: "#5055f8",
     secondary: "#c6c8fb",
-    assets: makeAssets("gradient-dimensional", [
+    assets: makeCollectionAssets(
+      "gradient-dimensional",
       [
-        "orbital-system",
-        "Orbital system",
-        "AI & technology",
-        dimensional.gradientOrbit,
+        [
+          "orbital-system",
+          "Orbital system",
+          "AI & technology",
+          dimensional.gradientOrbit,
+        ],
+        [
+          "layered-system",
+          "Layered system",
+          "Shapes & expression",
+          dimensional.gradientLayers,
+        ],
+        [
+          "continuous-cycle",
+          "Continuous cycle",
+          "Actions & status",
+          dimensional.gradientCycle,
+        ],
       ],
-      [
-        "layered-system",
-        "Layered system",
-        "Shapes & expression",
-        dimensional.gradientLayers,
-      ],
-      [
-        "continuous-cycle",
-        "Continuous cycle",
-        "Actions & status",
-        dimensional.gradientCycle,
-      ],
-    ]),
+      6,
+    ),
   },
   {
     id: "frosted-glass",
@@ -262,26 +306,30 @@ export const collections: readonly ArtworkCollection[] = [
     ink: "#1246d8",
     primary: "#0642f5",
     secondary: "#aabffc",
-    assets: makeAssets("frosted-glass", [
+    assets: makeCollectionAssets(
+      "frosted-glass",
       [
-        "glass-folder",
-        "Glass folder",
-        "Files & productivity",
-        dimensional.frostedFolder,
+        [
+          "glass-folder",
+          "Glass folder",
+          "Files & productivity",
+          dimensional.frostedFolder,
+        ],
+        [
+          "glass-lock",
+          "Glass lock",
+          "Identity & security",
+          dimensional.frostedLock,
+        ],
+        [
+          "glass-location",
+          "Glass location",
+          "Travel & environment",
+          dimensional.frostedLocation,
+        ],
       ],
-      [
-        "glass-lock",
-        "Glass lock",
-        "Identity & security",
-        dimensional.frostedLock,
-      ],
-      [
-        "glass-location",
-        "Glass location",
-        "Travel & environment",
-        dimensional.frostedLocation,
-      ],
-    ]),
+      7,
+    ),
   },
   {
     id: "technical-wireframe",
@@ -293,21 +341,25 @@ export const collections: readonly ArtworkCollection[] = [
     ink: "#e8e9ee",
     primary: "#cfd2e4",
     secondary: "#9094a0",
-    assets: makeAssets("technical-wireframe", [
+    assets: makeCollectionAssets(
+      "technical-wireframe",
       [
-        "spherical-grid",
-        "Spherical grid",
-        "Shapes & expression",
-        wire.wireSphere,
+        [
+          "spherical-grid",
+          "Spherical grid",
+          "Shapes & expression",
+          wire.wireSphere,
+        ],
+        [
+          "toroidal-surface",
+          "Toroidal surface",
+          "Shapes & expression",
+          wire.wireTorus,
+        ],
+        ["wave-field", "Wave field", "AI & technology", wire.wireWave],
       ],
-      [
-        "toroidal-surface",
-        "Toroidal surface",
-        "Shapes & expression",
-        wire.wireTorus,
-      ],
-      ["wave-field", "Wave field", "AI & technology", wire.wireWave],
-    ]),
+      8,
+    ),
   },
   {
     id: "monochrome-isometric",
@@ -319,26 +371,30 @@ export const collections: readonly ArtworkCollection[] = [
     ink: "#111111",
     primary: "#111111",
     secondary: "#cccccc",
-    assets: makeAssets("monochrome-isometric", [
+    assets: makeCollectionAssets(
+      "monochrome-isometric",
       [
-        "elevated-layers",
-        "Elevated layers",
-        "Shapes & expression",
-        dimensional.monoLayers,
+        [
+          "elevated-layers",
+          "Elevated layers",
+          "Shapes & expression",
+          dimensional.monoLayers,
+        ],
+        [
+          "modular-structure",
+          "Modular structure",
+          "Cloud & technology",
+          dimensional.monoModules,
+        ],
+        [
+          "archive-cabinet",
+          "Archive cabinet",
+          "Files & productivity",
+          dimensional.monoArchive,
+        ],
       ],
-      [
-        "modular-structure",
-        "Modular structure",
-        "Cloud & technology",
-        dimensional.monoModules,
-      ],
-      [
-        "archive-cabinet",
-        "Archive cabinet",
-        "Files & productivity",
-        dimensional.monoArchive,
-      ],
-    ]),
+      9,
+    ),
   },
   {
     id: "glossy-glass",
@@ -352,26 +408,30 @@ export const collections: readonly ArtworkCollection[] = [
     secondary: "#b9e6fc",
     sourceNote:
       "These are editable SVG material studies. Native 3D models and physically rendered glass are still required for the final 3D collection.",
-    assets: makeAssets("glossy-glass", [
+    assets: makeCollectionAssets(
+      "glossy-glass",
       [
-        "glass-shield",
-        "Glass shield",
-        "Identity & security",
-        dimensional.glossyShield,
+        [
+          "glass-shield",
+          "Glass shield",
+          "Identity & security",
+          dimensional.glossyShield,
+        ],
+        [
+          "glass-rocket",
+          "Glass rocket",
+          "Business & growth",
+          dimensional.glossyRocket,
+        ],
+        [
+          "glass-growth",
+          "Glass growth",
+          "Commerce & finance",
+          dimensional.glossyGrowth,
+        ],
       ],
-      [
-        "glass-rocket",
-        "Glass rocket",
-        "Business & growth",
-        dimensional.glossyRocket,
-      ],
-      [
-        "glass-growth",
-        "Glass growth",
-        "Commerce & finance",
-        dimensional.glossyGrowth,
-      ],
-    ]),
+      10,
+    ),
   },
 ];
 export const collectionArtworks: readonly CollectionArtwork[] =
